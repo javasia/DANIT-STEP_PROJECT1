@@ -10,9 +10,10 @@ document.querySelector("#search").addEventListener('blur', function () {
 
 document.querySelector("#search-link").addEventListener('click', () => event.preventDefault());
 
+
 $(window).on("load", function () {
-    $(".grid").masonry({
-        columnWidth: '.grid-item',
+    $("#grid").masonry({
+        columnWidth: 123, 
         itemSelector: '.grid-item'
     });
 });
