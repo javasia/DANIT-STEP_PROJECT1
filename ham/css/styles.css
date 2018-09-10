@@ -99,12 +99,12 @@ body {
 
 .top-menu-search-img {
     width: 22px; height: 22px;
-    background: url('../img/top_menu_search_sprites.png') -10px -10px;
+    background: url('../img/top_menu_search_sprites.png') -10px -9px;
 }
 
 .top-menu-search-img:hover {
     width: 22px; height: 22px;
-    background: url('../img/top_menu_search_sprites.png') -10px -52px;
+    background: url('../img/top_menu_search_sprites.png') -10px -51px;
 }
 
 .home-h2text{
@@ -353,9 +353,10 @@ body {
 
 .grid-item{
 	margin: 0px;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
+/*
 .grid-item.size-l{
 	width: 369px;
 }
@@ -379,3 +380,4 @@ body {
 .grid-item.size-s > *{
 	width: 123px;
 }
+*/
