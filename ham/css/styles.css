@@ -353,31 +353,30 @@ body {
 
 .grid-item{
 	margin: 0px;
-/*	overflow: hidden;*/
+	overflow: hidden;
 }
 
-/*
 .grid-item.size-l{
-	width: 369px;
+	width: 370px;
 }
 
 .grid-item.size-m {
-	width: 185px;
+	width: 184px;
 }
 
 .grid-item.size-s {
 	width: 123px;
+    height: 90px;
 }
 
 .grid-item.size-l > *{
-	width: 369px;
+	width: 370px;
 }
 
 .grid-item.size-m  > *{
-	width: 185px;
+	width: 184px;
 }
 
 .grid-item.size-s > *{
 	width: 123px;
 }
-*/
