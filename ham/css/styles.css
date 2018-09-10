@@ -88,6 +88,25 @@ body {
 	border-bottom: 2px solid #00cc99;
 }
 
+.search {
+    display: none;
+    width: 150px;
+    margin-right: 20px;
+    outline: none;
+    transform: translateY(-4px);
+    border: none;
+}
+
+.top-menu-search-img {
+    width: 22px; height: 22px;
+    background: url('../img/top_menu_search_sprites.png') -10px -10px;
+}
+
+.top-menu-search-img:hover {
+    width: 22px; height: 22px;
+    background: url('../img/top_menu_search_sprites.png') -10px -52px;
+}
+
 .home-h2text{
 	color:  #ffffff;
 	font-size: 35px;
@@ -171,15 +190,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between; 
-}
-
-.search {
-    display: none;
-    width: 150px;
-    margin-right: 20px;
-    outline: none;
-    transform: translateY(-4px);
-    border: none;
 }
 
 .pictures {
