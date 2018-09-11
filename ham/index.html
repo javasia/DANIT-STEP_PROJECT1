@@ -5,8 +5,13 @@
     <title>theHAM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="stylesheet" type="text/css" href="css\reset.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css\styles.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="js/my_utils.js"></script>
+    <script type="text/javascript" src="js/my_workpics.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -31,7 +36,9 @@
                     <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">contact</a></div>
                 </nav>
                 <form action=""><input type="text" name="search" id="search" class="search">
-                    <a id="search-link" href=""><div class="top-menu-search-img" id="search-img"></div></a>
+                    <a id="search-link" href="">
+                        <div class="top-menu-search-img" id="search-img"></div>
+                    </a>
                 </form>
             </div>
         </section>
@@ -92,8 +99,8 @@
             <ul id="workpics" class="pictures">
                 <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
@@ -101,95 +108,106 @@
                 </li>
                 <li category="landing pages" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
                     <img src="img/amazing/amz_(2).jpg" alt="">
                 </li>
-                <li category="web design" class="pictures-item">                    
+                <li category="web design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(3).jpg" alt=""></li>
-                <li category="web design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(3).jpg" alt="">
+                </li>
+                <li category="web design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(4).jpg" alt=""></li>
-                <li category="graphic design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(4).jpg" alt="">
+                </li>
+                <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(5).jpg" alt=""></li>
-                <li category="graphic design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(5).jpg" alt="">
+                </li>
+                <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(6).jpg" alt=""></li>
-                <li category="graphic design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(6).jpg" alt="">
+                </li>
+                <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(7).jpg" alt=""></li>
-                <li category="graphic design" class="pictures-item">                    <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
-                        <div class="hover-window-topline font-green font-bold">creative design</div>
-                        <div class="hover-window-botline">web design</div>
-                    </div>
-                    <img src="img/amazing/amz_(8).jpg" alt=""></li>
-                <li category="graphic design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(7).jpg" alt="">
+                </li>
+                <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(9).jpg" alt=""></li>
-                <li category="wordpress" class="pictures-item">                    
+                    <img src="img/amazing/amz_(8).jpg" alt="">
+                </li>
+                <li category="graphic design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(10).jpg" alt=""></li>
-                <li category="web design" class="pictures-item">                    
+                    <img src="img/amazing/amz_(9).jpg" alt="">
+                </li>
+                <li category="wordpress" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(11).jpg" alt=""></li>
-                <li class="pictures-item">                    
+                    <img src="img/amazing/amz_(10).jpg" alt="">
+                </li>
+                <li category="web design" class="pictures-item">
                     <div class="hover-window">
-                        <img class="hover-window-img" src="img/link-amz-work.png">
-                        <img class="hover-window-img" src="img/search-amz-work.png">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
                         <div class="hover-window-topline font-green font-bold">creative design</div>
                         <div class="hover-window-botline">web design</div>
                     </div>
-                    <img src="img/amazing/amz_(12).png" alt=""></li>
+                    <img src="img/amazing/amz_(11).jpg" alt="">
+                </li>
+                <li class="pictures-item">
+                    <div class="hover-window">
+                        <a href=""><img class="hover-window-img" src="img/link-amz-work.png"></a>
+                        <a href=""><img class="hover-window-img" src="img/search-amz-work.png"></a>
+                        <div class="hover-window-topline font-green font-bold">creative design</div>
+                        <div class="hover-window-botline">web design</div>
+                    </div>
+                    <img src="img/amazing/amz_(12).png" alt="">
+                </li>
             </ul>
             <a href="">
-                <div class="general-button"><span>+ load more</span></div>
+                <div id="amazing-work-add-button" class="general-button"><span>+ load more</span></div>
             </a>
         </div>
     </section>
@@ -201,7 +219,7 @@
                 <div class="grid-item size-l"><img src="img/bestimgs/img2.jpg" alt=""></div>
                 <div class="grid-item size-l"><img src="img/bestimgs/img6.jpg" alt=""></div>
                 <div class="grid-item size-s"><img src="img/bestimgs/img14.jpg" alt=""></div>
-                <div class="grid-item size-s"><img src="img/bestimgs/img10.jpg" alt=""></div>               
+                <div class="grid-item size-s"><img src="img/bestimgs/img10.jpg" alt=""></div>
                 <div class="grid-item size-s"><img src="img/bestimgs/img13.jpg" alt=""></div>
                 <div class="grid-item size-l"><img src="img/bestimgs/img7.jpg" alt=""></div>
                 <div class="grid-item size-l"><img src="img/bestimgs/img5.jpg" alt=""></div>
@@ -226,11 +244,5 @@
     </footer>
 
 </body>
-
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/masonry.pkgd.js"></script>
-<script type="text/javascript" src="js/my_utils.js"></script>
-<script type="text/javascript" src="js/my_workpics.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 
 </html>

@@ -202,18 +202,17 @@ body {
 
 .pictures-item {
     overflow: hidden;
-    height: 206px;
-    width: 284px;
+    height: 206px;    width: 284px;
     box-sizing: border-box;
-    transition: 500ms padding-top cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: 700ms padding-top cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.pictures-item > img{
+    width: 284px;
 }
 
 .pictures-item:hover {
 	padding-top: 206px;
-}
-
-.pictures-item > img{
-	height: 206px;
 }
 
 .hover-window {
@@ -308,6 +307,7 @@ body {
 }
 
 .general-button {
+    align-self: center;
     margin: 72px auto 0;
     text-align: center;
     position: relative;
