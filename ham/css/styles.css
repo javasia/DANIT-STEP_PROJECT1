@@ -356,7 +356,7 @@ body {
 	overflow: hidden;
 }
 
-.grid-item.size-l{
+.grid-item.size-l {
 	width: 370px;
 }
 
@@ -369,14 +369,14 @@ body {
     height: 90px;
 }
 
-.grid-item.size-l > *{
+.grid-item.size-l > * {
 	width: 370px;
 }
 
-.grid-item.size-m  > *{
+.grid-item.size-m  > * {
 	width: 184px;
 }
 
-.grid-item.size-s > *{
+.grid-item.size-s > * {
 	width: 123px;
 }
