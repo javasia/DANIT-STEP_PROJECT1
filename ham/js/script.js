@@ -13,7 +13,7 @@ document.querySelector("#search-link").addEventListener('click', () => event.pre
 
 $(window).on("load", function () {
     $("#grid").masonry({
-        columnWidth: 123, 
+        columnWidth: 130, 
         itemSelector: '.grid-item'
     });
 });
