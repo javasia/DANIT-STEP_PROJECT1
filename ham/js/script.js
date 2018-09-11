@@ -1,20 +1,24 @@
-document.querySelector("#search-img").addEventListener('click', function () {
-    event.target.style.display = "none";
-    document.querySelector("#search").style.display = "block";
+document.addEventListener('DOMContentLoaded', function(){
+	document.querySelector("#search-img").addEventListener('click', function () {
+	    document.switchDisplay(event.target, false);
+	    document.switchDisplay(document.querySelector("#search"), true);
+	});
+
+	document.querySelector("#search").addEventListener('blur', function () {
+    	document.switchDisplay(event.target, false);
+    	document.switchDisplay(document.querySelector("#search-img"), true);
+	});
+
+	document.querySelector("#search-link").addEventListener('click', () => event.preventDefault());
+	
+	document.htmlCollectionToArray(document.querySelector("#workpics-switch-menu").children).forEach(button => button.addEventListener('click', filterCategories));
+
+	loadmore();
 });
-
-document.querySelector("#search").addEventListener('blur', function () {
-    event.target.style.display = "none";
-    document.querySelector("#search-img").style.display = "block";
-});
-
-document.querySelector("#search-link").addEventListener('click', () => event.preventDefault());
-
 
 $(window).on("load", function () {
     $("#grid").masonry({
-        columnWidth: 123, 
+        columnWidth: 125, 
         itemSelector: '.grid-item'
     });
 });
-
