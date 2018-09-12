@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	document.htmlCollectionToArray(document.querySelector("#workpics-switch-menu").children).forEach(button => button.addEventListener('click', filterCategories));
 
 // document.querySelector("#amazing-work-add-button").addEventListener("click", loadmore);
-  document.querySelector("#amazing-work-add-button").addEventListener("click", loadingAnimate);
-  // document.querySelector("#amazing-work-add-button").addEventListener("click", loadmoreAnimated);
+//  document.querySelector("#amazing-work-add-button").addEventListener("click", loadingAnimate);
+   document.querySelector("#amazing-work-add-button").addEventListener("click", loadmoreAnimated);
 });
 
 $(window).on("load", function () {
