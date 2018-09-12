@@ -15,6 +15,7 @@ function getWorkPicNodesSet() {
 }
 
 function loadmore() {
+   // loadingAnimate.call(event);
     event.preventDefault();
     document.switchDisplay(event.target.parentElement, false);
     resetFilter();
@@ -36,4 +37,17 @@ function loadmore() {
 
 function resetFilter() {
     getWorkPicNodesSet().forEach((node) => document.switchDisplay(node, true));
+}
+
+function loadingAnimate(){
+    event.preventDefault();
+    let animation = document.querySelector(".loading-animation");
+    let buttonContainer = event.target.parentElement;
+    document.switchDisplay(buttonContainer, false);
+    document.switchDisplay(animation, true);
+    setTimeout(()=>{
+        document.switchDisplay(animation, false);
+        document.switchDisplay(buttonContainer, true);
+        functionToRun.call(event);
+    }, 2000);
 }
