@@ -15,7 +15,6 @@ function getWorkPicNodesSet() {
 }
 
 function loadmore() {
-   // loadingAnimate.call(event);
     event.preventDefault();
     document.switchDisplay(event.target.parentElement, false);
     resetFilter();
@@ -48,6 +47,5 @@ function loadingAnimate(){
     setTimeout(()=>{
         document.switchDisplay(animation, false);
         document.switchDisplay(buttonContainer, true);
-        functionToRun.call(event);
     }, 2000);
 }
