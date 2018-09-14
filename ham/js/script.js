@@ -2,16 +2,12 @@ function filterCategories() {
     event.preventDefault();
     let categotyToFilter = event.target.textContent.toLowerCase();
     let showAll = categotyToFilter == "all";
-    getWorkPicNodesSet().forEach((node) => document.switchDisplay(node, showAll || node.attributes.category.value == categotyToFilter));
-}
-
-function getWorkPicNodesSet() {
-    return new Set(document.htmlCollectionToArray(document.querySelector("#workpics").children)
-        .map(function (node) {
-            node.setAttribute("category", node.attributes.category ? node.attributes.category.value.toLowerCase() : "all");
-            return node;
-        })
-    );
+    new Set(document.htmlCollectionToArray(document.querySelector("#workpics").children)
+            .map(function (node) {
+                node.setAttribute("category", node.attributes.category ? node.attributes.category.value.toLowerCase() : "all");
+                return node;
+            }))
+        .forEach((node) => document.switchDisplay(node, showAll || node.attributes.category.value == categotyToFilter));
 }
 
 function animateFunctionWrapper() {
@@ -24,11 +20,11 @@ function loadMore() {
     if (event) {
         event.preventDefault();
         buttonBlock = event.currentTarget;
-    }else{
+    } else {
         buttonBlock = this;
     }
-    let functionTarget =  document.querySelector("#" + buttonBlock.getAttribute("target_list_id"));
-    if (functionTarget.maxPages > functionTarget.currentPage) {     // to prevent wrong behaviour in case if the function is called directly (other than through the button element)
+    let functionTarget = document.querySelector("#" + buttonBlock.getAttribute("target_list_id"));
+    if (functionTarget.maxPages > functionTarget.currentPage) { // to prevent wrong behaviour in case if the function is called directly (other than through the button element)
         resetFilter(functionTarget);
         let imgPath = functionTarget.getAttribute("img-path");
         let fileName = "img%NUMBER%.jpg";
@@ -50,7 +46,7 @@ function loadMore() {
     document.switchDisplay(buttonBlock, functionTarget.maxPages > functionTarget.currentPage)
 }
 
-function collectFilterCategories(filterId){
+function collectFilterCategories(filterId) {
     return document.htmlCollectionToArray(document.querySelector("#" + filterId).children).map(el => el.textContent);
 }
 
@@ -60,10 +56,10 @@ function resetFilter(target) {
 
 function animateFunction(funtionsToRun) {
     let buttonContainer = this.currentTarget;
-    let animationSource =  buttonContainer.nextElementSibling;
+    let animationSource = buttonContainer.nextElementSibling;
     document.switchDisplay(buttonContainer, false);
     document.switchDisplay(animationSource, true);
-    setTimeout(function() {
+    setTimeout(function () {
         document.switchDisplay(animationSource, false);
         document.switchDisplay(buttonContainer, true);
         funtionsToRun.forEach((f => f.call(buttonContainer)));
