@@ -10,8 +10,8 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.js"></script>
     <script type="text/javascript" src="js/my_utils.js"></script>
-    <script type="text/javascript" src="js/my_workpics.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
 </head>
 
 <body>
@@ -89,14 +89,14 @@
     <section class="amzing-work">
         <div class="container">
             <h2 class="section-title">our amazing work</h2>
-            <div id="workpics-switch-menu" class="switch-menu">
+            <div id="workpics-switch-filter" class="switch-menu">
                 <a href="" class="switch-items">all</a>
                 <a href="" class="switch-items">graphic design</a>
                 <a href="" class="switch-items">web design</a>
                 <a href="" class="switch-items">landing pages</a>
                 <a href="" class="switch-items">wordpress</a>
             </div>
-            <ul id="workpics" class="pictures">
+            <ul id="workpics" img-path="img/amazing/" filter_id="workpics-switch-filter" class="pictures">
                 <li category="graphic design" class="pictures-item">
                     <div class="amazing-work-hover-window">
                         <a href=""><img class="amazing-work-hover-window-img" src="img/link-amz-work.png"></a>
@@ -207,18 +207,18 @@
                 </li>
             </ul>
             <a href="">
-                <div id="amazing-work-add-button" class="general-button"><span>+ load more</span></div>
+                <div target_list_id = "workpics" class="addmore-button"><span>+ load more</span></div>
+                <div class="loading-animation">
+                    <div class="blob-1"></div>
+                    <div class="blob-2"></div>
+                </div>
             </a>
-            <div class="loading-animation">
-                <div class="blob-1"></div>
-                <div class="blob-2"></div>
-            </div>
         </div>
     </section>
     <section class="galery">
         <div class="container">
             <h2 class="section-title">Gallery of best images</h2>
-            <div id="grid" class="grid">
+            <div id="grid" img-path="img/amazing/" class="grid">
                 <div class="grid-item size-l">
                     <div class="galery-hover-window">
                         <div class="galery-hover-window-button"><img src="img/toggle_enlarge.png"></div>
@@ -347,7 +347,11 @@
                 </div>
             </div>
             <a href="">
-                <div class="general-button"><span>+ load more</span></div>
+                <div target_list_id = "grid" class="addmore-button"><span>+ load more</span></div>
+                <div class="loading-animation">
+                    <div class="blob-1"></div>
+                    <div class="blob-2"></div>
+                </div>
             </a>
         </div>
     </section>
