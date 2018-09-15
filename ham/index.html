@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css\styles.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="js/masonry.pkgd.js"></script>
+    <script type="text/javascript"  src="js/smooth_scroll.js"></script>
     <script type="text/javascript" src="js/my_utils.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
@@ -25,15 +27,15 @@
                     </div>
                 </a>
                 <nav class="top-menu">
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">home</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">about</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">skills</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">service</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">work</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">testimonial</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">blog</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">team</a></div>
-                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="">contact</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#home">home</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#about">about</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#skills">skills</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#service">service</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#work">work</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#testimonial">testimonial</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#blog">blog</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#team">team</a></div>
+                    <div class="menu-item-wrapper"><a class="menu-item font-bold" href="#contact">contact</a></div>
                 </nav>
                 <form action=""><input type="text" name="search" id="search" class="search">
                     <a id="search-link" href="">
@@ -42,7 +44,7 @@
                 </form>
             </div>
         </section>
-        <section class="container">
+        <section id="home" class="container">
             <h4 class="home-h2text font-bold">The ham is<span class="home-h2text font-bold font-green"> wordpress theme</span></h4>
             <h1 class="home-h1text font-bold">we are creative</h1>
             <h3 class="home-h3text">just buy and enjoy these awesome features</h3>
@@ -60,7 +62,7 @@
             </div>
         </section>
     </header>
-    <section class="features">
+    <section id="about" class="features">
         <div class="features-item">
             <div class="features-item-inner">
                 <div><img src="img/Forma1.png"></div>
@@ -86,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="amzing-work">
+    <section id="work" class="amazing-work">
         <div class="container">
             <h2 class="section-title">our amazing work</h2>
             <div id="workpics-switch-filter" class="switch-menu">
@@ -215,7 +217,7 @@
             </a>
         </div>
     </section>
-    <section class="galery">
+    <section id="blog" class="galery">
         <div class="container">
             <h2 class="section-title">Gallery of best images</h2>
             <div id="grid" img-path="img/amazing/" class="grid">

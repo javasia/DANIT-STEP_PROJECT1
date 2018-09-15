@@ -3,12 +3,13 @@ let masonrySettings = {
     columnWidth: 63,
     gutter: 1,
     fitWidth: true,
-    horizontalOrder: true
+    horizontalOrder: true,
 };
 $(window).on("load", function () {
     $("#grid").masonry(masonrySettings);
 });
 document.addEventListener("DOMContentLoaded", function () {
+    smoothScroll()
     document.querySelector("#search-img").addEventListener("click", function () {
         document.switchDisplay(event.target, false);
         document.switchDisplay(document.querySelector("#search"), true);
@@ -28,12 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     workpics.currentPage = 1;
     workpics.picsPerPage = 12;
     let grid = document.querySelector("#grid");
-    grid.maxPages = 30;
+    grid.maxPages = 3;
     grid.currentPage = 1;
-    grid.picsPerPage = 3;
+    grid.picsPerPage = 12;
     document.querySelector("[target_list_id=" + grid.id + "]").funtionsToRun.push(function () {
         let $grid = $("#grid").masonry(masonrySettings);
         $grid.masonry("reloadItems");
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry('layout');
+        });
         $grid.masonry("layout");
     });
 });
