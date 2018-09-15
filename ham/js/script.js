@@ -31,7 +31,7 @@ function loadMore() {
         let model = functionTarget.firstElementChild;
         let filterId = functionTarget.getAttribute("filter_id");
         let categories = filterId ? collectFilterCategories(filterId) : null;
-        for (var i = 1; i <= functionTarget.picsPerPage; i++) {
+        for (let i = 1; i <= functionTarget.picsPerPage; i++) {
             let containerNode = document.createElement("div");
             containerNode.classList = model.classList;
             containerNode.setAttribute("category", categories ? categories[Math.round(Math.random() * (categories.length - 1) + 1)] : "all"); //random category
