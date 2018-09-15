@@ -9,7 +9,7 @@ $(window).on("load", function () {
     $("#grid").masonry(masonrySettings);
 });
 document.addEventListener("DOMContentLoaded", function () {
-    smoothScroll()
+    smoothScroll();
     document.querySelector("#search-img").addEventListener("click", function () {
         document.switchDisplay(event.target, false);
         document.switchDisplay(document.querySelector("#search"), true);
@@ -38,6 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
         $grid.imagesLoaded().progress(function () {
             $grid.masonry('layout');
         });
-        $grid.masonry("layout");
     });
 });
