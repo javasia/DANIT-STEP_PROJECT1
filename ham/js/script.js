@@ -26,13 +26,13 @@ function loadMore() {
     let functionTarget = document.querySelector("#" + buttonBlock.getAttribute("target_list_id"));
     if (functionTarget.maxPages > functionTarget.currentPage) { // to prevent wrong behaviour in case if the function is called directly (other than through the button element)
         resetFilter(functionTarget);
-        let imgPath = functionTarget.getAttribute("img-path");
+        const imgPath = functionTarget.getAttribute("img-path");
         let fileName = "img%NUMBER%.jpg";
-        let model = functionTarget.firstElementChild;
-        let filterId = functionTarget.getAttribute("filter_id");
-        let categories = filterId ? collectFilterCategories(filterId) : null;
+        const model = functionTarget.firstElementChild;
+        const filterId = functionTarget.getAttribute("filter_id");
+        const categories = filterId ? collectFilterCategories(filterId) : null;
         for (let i = 1; i <= functionTarget.picsPerPage; i++) {
-            let containerNode = document.createElement("div");
+            const containerNode = document.createElement("div");
             containerNode.classList = model.classList;
             containerNode.setAttribute("category", categories ? categories[Math.round(Math.random() * (categories.length - 1) + 1)] : "all"); //random category
             containerNode.innerHTML = model.innerHTML;
