@@ -1,9 +1,5 @@
 document.htmlCollectionToArray = function(htmlCollection){
-	let arr = [];
-	for (var i = 0; i < htmlCollection.length; i++) {
-		arr.push(htmlCollection[i]);
-	}
-	return arr;
+	return Object.entries(htmlCollection).map(el => el[1]);
 }
 
 document.switchDisplay = function (node, toDisplay){
