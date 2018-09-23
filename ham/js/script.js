@@ -55,8 +55,8 @@ function resetFilter(target) {
 }
 
 function animateFunction(funtionsToRun) {
-    let buttonContainer = this.currentTarget;
-    let animationSource = buttonContainer.nextElementSibling;
+    const buttonContainer = this.currentTarget;
+    const animationSource = buttonContainer.nextElementSibling;
     document.switchDisplay(buttonContainer, false);
     document.switchDisplay(animationSource, true);
     setTimeout(function () {
